@@ -5,10 +5,7 @@ int main()
     char s[101], s1[101];
     scanf("%s %s", &s, &s1);
     int ls1 = strlen(s1);
-    for (int i; i <= ls1; i++)
-    {
-        s[i] = s1[i];
-    }
+    strcpy(s,s1);
     printf("%s %s", &s, &s1);
     return 0;
 }
